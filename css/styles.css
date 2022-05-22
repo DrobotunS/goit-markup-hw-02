@@ -7,7 +7,7 @@
   --logo-header-color: #000000;
   --logo-footer-color: #ffffff;
   --text-hero-color: #ffffff;
-  --button-bg-color: rgb(0, 0, 0, 0.1);
+  --button-bg-color: #f5f4fa;
   --footer-link-contact: rgba(255, 255, 255, 0.6);
 }
 /* body */
@@ -56,6 +56,8 @@ body {
   text-align: center;
 }
 .hero-title {
+  margin-top: 0%;
+  margin-bottom: 30px;
   color: var(--text-hero-color);
   font-weight: 900;
   font-size: 44px;
@@ -65,6 +67,11 @@ body {
 }
 /* button */
 .button-primary {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
   color: var(--accent-button-color);
   font-family: inherit;
   background-color: var(--accent-color);
@@ -72,6 +79,7 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  text-align: center;
 }
 .button-primary:hover,
 .button-primary:focus {
@@ -79,13 +87,19 @@ body {
   background-color: var(--accent-button-color);
 }
 .button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+  min-width: 73px;
+  text-align: center;
   background-color: var(--button-bg-color);
   color: var(--title-text-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  border: none;
 }
 .button:hover,
 .button:focus {
@@ -159,4 +173,6 @@ address {
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
